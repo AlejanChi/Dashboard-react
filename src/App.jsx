@@ -7,8 +7,13 @@ import Cart from "./components/Cart.jsx"
 function App(){
   const toggleMenu = () =>{
     setShowMenu(!showMenu);
+    setShowOrder(false);
   }
-  const cart = useState(false)
+  const toggleOrders = () =>{
+    setShowOrder(!showOrder);
+    setShowMenu(false);
+  }
+  
   const [showMenu, setShowMenu] = useState(false);
   const [showOrder, setShowOrder] = useState(false);
   return <div className="bg-gray-700 w-full min-h-screen">
@@ -69,13 +74,13 @@ function App(){
         </div>
       </div>
 {/* CARRITO */}
-<Cart props={cart}/>
+<Cart val={showOrder} func={toggleOrders}/>
     </main>
     <div className="bg-gray-800 lg:hidden fixed w-full bottom-0 left-0 text-3xl text-gray-300 py-4 px-3 flex items-center justify-between rounded-tl-xl rounded-tr-xl">
       <button><LuBookmark/></button>
       <button onClick={toggleMenu}><LuArrowUpNarrowWide/></button>
       <button><LuPlusCircle/></button>
-      <button><GoPerson/></button>
+      <button onClick={toggleOrders}><GoPerson/></button>
     </div>
   </div>
 }
