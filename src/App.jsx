@@ -1,10 +1,18 @@
 import Sidebar from "./components/Sidebar.jsx"
-import {LuArrowUpNarrowWide, LuPlusCircle, LuBookmark, LuSearch} from "react-icons/lu"
+import {LuArrowUpNarrowWide, LuPlusCircle, LuBookmark, LuSearch, LuArrowBigUp} from "react-icons/lu"
 import {GoPerson } from "react-icons/go"
 import { useState } from "react"
 import Card from "./components/Card.jsx"
 import Cart from "./components/Cart.jsx"
 function App(){
+
+  const top = ()=>{
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
   const toggleMenu = () =>{
     setShowMenu(!showMenu);
     setShowOrder(false);
@@ -22,7 +30,7 @@ function App(){
     {/* CABECERA DEL MAIN */}
     <main className="lg:pl-32 grid grid-cols-1 lg:grid-cols-8">
       <div className="lg:col-span-6 p-8">
-        <header className="">
+        <header className="mb-4">
           <div className="flex flex-col gap-4 md:flex-row md:justify-between md:items-center">
             <div>
               <h1 className="text-white text-2xl font-bold">
@@ -72,6 +80,7 @@ function App(){
           <Card></Card>
           
         </div>
+        <button className={`fixed p-3 lg:bottom-4 bottom-20 lg:left-32 bg-gray-900 text-white text-3xl rounded-xl hover:bg-blue-500 z-20 ${showOrder||showMenu?'hidden':''}`} onClick={top}><LuArrowBigUp/></button>
       </div>
 {/* CARRITO */}
 <Cart val={showOrder} func={toggleOrders}/>
