@@ -2,7 +2,7 @@ import {LuX} from "react-icons/lu"
 import Product from "./Product"
 import { useEffect, useState } from "react";
 function Cart({val, func}){
-    // let scrn = useState(screen.height - ((screen.height*20)/100));
+    let scrn = (screen.height - 184)+"px";
     const cartStructure = <div className={`lg:col-span-2 fixed lg:right-0 lg:w-[23%] ${val?"right-0":"-right-full"} top-0 w-full h-full z-10 bg-gray-800 flex flex-col gap-4 transition-all`}>
         <div className="relative text-white w-full h-screen">
             <LuX onClick={func} className="absolute top-4 ml-4 p-4 box-content text-xl hover:bg-gray-600 rounded-full lg:hidden"/>
@@ -23,7 +23,7 @@ function Cart({val, func}){
                 <h5>Qty</h5>
                 <h5>Prc</h5>
             </div>
-            <div className={`h-[400px] md:h-[800px] lg:h-[800px] overflow-y-scroll scrollbar-hide pl-6 pr-2 mt-6 gap-4 flex flex-col pb-72`}>
+            <div className={`h-[400px] md:h-[800px] lg:h-[${scrn}] overflow-y-scroll scrollbar-hide pl-6 pr-2 mt-6 gap-4 flex flex-col pb-[600px]`}>
                 <Product/>
                 <Product/>
                 <Product/>
