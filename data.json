@@ -1,33 +1,144 @@
 {
-  "datos":[
-  {
-    "id": 1,
-    "nombre": "Hamburguesa clásica",
-    "precio": 9.99,
-    "descripcion": "Una jugosa hamburguesa con carne de res, lechuga, tomate y queso cheddar en un pan recién horneado."
-  },
-  {
-    "id": 2,
-    "nombre": "Pizza de pepperoni",
-    "precio": 12.99,
-    "descripcion": "Deliciosa pizza con salsa de tomate, queso mozzarella y abundantes rodajas de pepperoni."
-  },
-  {
-    "id": 3,
-    "nombre": "Ensalada César",
-    "precio": 7.99,
-    "descripcion": "Una fresca ensalada César con lechuga romana, crutones, parmesano y aderezo César."
-  },
-  {
-    "id": 4,
-    "nombre": "Sushi variado",
-    "precio": 18.99,
-    "descripcion": "Un surtido de sushi fresco que incluye rollos de salmón, atún y aguacate, con salsa de soja y wasabi."
-  },
-  {
-    "id": 5,
-    "nombre": "Tacos al pastor",
-    "precio": 10.49,
-    "descripcion": "Tacos de cerdo marinado con piña, cebolla y cilantro en tortillas de maíz recién hechas."
-  }]
+  "datos": [
+    {
+      "id": 1,
+      "nombre": "Hamburguesa clásica",
+      "precio": 9.99,
+      "descripcion": "Una jugosa hamburguesa con carne de res, lechuga, tomate y queso cheddar en un pan recién horneado.",
+      "tipo": "comida caliente"
+    },
+    {
+      "id": 2,
+      "nombre": "Pizza de pepperoni",
+      "precio": 12.99,
+      "descripcion": "Deliciosa pizza con salsa de tomate, queso mozzarella y abundantes rodajas de pepperoni.",
+      "tipo": "comida caliente"
+    },
+    {
+      "id": 3,
+      "nombre": "Ensalada César",
+      "precio": 7.99,
+      "descripcion": "Una fresca ensalada César con lechuga romana, crutones, parmesano y aderezo César.",
+      "tipo": "comida fría"
+    },
+    {
+      "id": 4,
+      "nombre": "Sushi variado",
+      "precio": 18.99,
+      "descripcion": "Un surtido de sushi fresco que incluye rollos de salmón, atún y aguacate, con salsa de soja y wasabi.",
+      "tipo": "comida fría"
+    },
+    {
+      "id": 5,
+      "nombre": "Tacos al pastor",
+      "precio": 10.49,
+      "descripcion": "Tacos de cerdo marinado con piña, cebolla y cilantro en tortillas de maíz recién hechas.",
+      "tipo": "comida caliente"
+    },
+    {
+      "id": 6,
+      "nombre": "Sopa de tomate",
+      "precio": 5.99,
+      "descripcion": "Una cremosa sopa de tomate servida con un toque de albahaca y crema.",
+      "tipo": "sopa"
+    },
+    {
+      "id": 7,
+      "nombre": "Helado de vainilla",
+      "precio": 4.99,
+      "descripcion": "Helado cremoso de vainilla hecho con vainilla natural.",
+      "tipo": "postre"
+    },
+    {
+      "id": 8,
+      "nombre": "Panqueques con jarabe de arce",
+      "precio": 8.49,
+      "descripcion": "Panqueques esponjosos servidos con jarabe de arce puro.",
+      "tipo": "comida caliente"
+    },
+    {
+      "id": 9,
+      "nombre": "Ensalada de frutas",
+      "precio": 6.49,
+      "descripcion": "Una mezcla fresca de frutas de temporada, perfecta para un día caluroso.",
+      "tipo": "comida fría"
+    },
+    {
+      "id": 10,
+      "nombre": "Pollo frito",
+      "precio": 11.99,
+      "descripcion": "Crujientes piezas de pollo frito sazonadas a la perfección.",
+      "tipo": "comida caliente"
+    },
+    {
+      "id": 11,
+      "nombre": "Gazpacho",
+      "precio": 7.99,
+      "descripcion": "Una sopa fría de tomate y vegetales, perfecta para los días de verano.",
+      "tipo": "sopa"
+    },
+    {
+      "id": 12,
+      "nombre": "Brownie de chocolate",
+      "precio": 3.99,
+      "descripcion": "Un delicioso brownie de chocolate con un centro suave y jugoso.",
+      "tipo": "postre"
+    },
+    {
+      "id": 13,
+      "nombre": "Sándwich de pavo",
+      "precio": 8.99,
+      "descripcion": "Sándwich de pavo con lechuga, tomate y mayonesa en pan integral.",
+      "tipo": "comida fría"
+    },
+    {
+      "id": 14,
+      "nombre": "Ramen",
+      "precio": 13.49,
+      "descripcion": "Un tazón de ramen caliente con fideos, carne de cerdo, huevo y vegetales.",
+      "tipo": "sopa"
+    },
+    {
+      "id": 15,
+      "nombre": "Tarta de manzana",
+      "precio": 5.49,
+      "descripcion": "Una tarta de manzana tradicional con una corteza dorada y relleno de manzanas.",
+      "tipo": "postre"
+    },
+    {
+      "id": 16,
+      "nombre": "Guacamole con nachos",
+      "precio": 6.99,
+      "descripcion": "Guacamole fresco servido con crujientes nachos de maíz.",
+      "tipo": "comida fría"
+    },
+    {
+      "id": 17,
+      "nombre": "Lasagna de carne",
+      "precio": 14.99,
+      "descripcion": "Lasagna de carne con capas de pasta, carne de res, ricotta y salsa de tomate.",
+      "tipo": "comida caliente"
+    },
+    {
+      "id": 18,
+      "nombre": "Batido de fresa",
+      "precio": 5.99,
+      "descripcion": "Batido cremoso de fresas frescas y yogur.",
+      "tipo": "comida fría"
+    },
+    {
+      "id": 19,
+      "nombre": "Croissant de almendra",
+      "precio": 3.49,
+      "descripcion": "Un croissant hojaldrado relleno de crema de almendra.",
+      "tipo": "postre"
+    },
+    {
+      "id": 20,
+      "nombre": "Empanadas de carne",
+      "precio": 2.99,
+      "descripcion": "Empanadas rellenas de carne molida sazonada y cebolla.",
+      "tipo": "comida caliente"
+    }
+  ]
 }
