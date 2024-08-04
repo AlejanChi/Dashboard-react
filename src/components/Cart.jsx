@@ -1,6 +1,9 @@
 import {LuX} from "react-icons/lu"
 import Product from "./Product"
 import { useEffect, useState } from "react";
+
+
+
 function Cart({val, func}){
     let scrn = (screen.height - 184)+"px";
     const cartStructure = <div className={`lg:col-span-2 fixed lg:right-0 lg:w-[23%] ${val?"right-0":"-right-full"} top-0 w-full h-full z-10 bg-gray-800 flex flex-col gap-4 transition-all`}>

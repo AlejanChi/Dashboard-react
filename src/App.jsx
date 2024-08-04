@@ -4,15 +4,21 @@ import {GoPerson } from "react-icons/go"
 import { useState } from "react"
 import Card from "./components/Card.jsx"
 import Cart from "./components/Cart.jsx"
-function App(){
+import { datos } from "../data.json"
+// import Articulos from "./backend/getData.jsx"
 
+
+console.log(datos.map(dato => dato))
+
+
+function App(){
+  // const {products} = useGLobalState();
   const top = ()=>{
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
   }
-
   const toggleMenu = () =>{
     setShowMenu(!showMenu);
     setShowOrder(false);
@@ -71,13 +77,12 @@ function App(){
         <div className="p-8 grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-20 lg:grid-cols-3 pb-28">
 
           {/* CARD */}
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
+
+            {datos.map((dato, i)=>(
+              <Card key={i} nombre={dato.nombre} desc={dato.descripcion}></Card>
+            ))}
+       
+          
           
         </div>
         <button className={`fixed p-3 lg:bottom-4 bottom-20 lg:left-32 bg-gray-900 text-white text-3xl rounded-xl hover:bg-blue-500 z-20 ${showOrder||showMenu?'hidden':''}`} onClick={top}><LuArrowBigUp/></button>

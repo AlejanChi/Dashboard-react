@@ -1,0 +1,33 @@
+{
+  "datos":[
+  {
+    "id": 1,
+    "nombre": "Hamburguesa clásica",
+    "precio": 9.99,
+    "descripcion": "Una jugosa hamburguesa con carne de res, lechuga, tomate y queso cheddar en un pan recién horneado."
+  },
+  {
+    "id": 2,
+    "nombre": "Pizza de pepperoni",
+    "precio": 12.99,
+    "descripcion": "Deliciosa pizza con salsa de tomate, queso mozzarella y abundantes rodajas de pepperoni."
+  },
+  {
+    "id": 3,
+    "nombre": "Ensalada César",
+    "precio": 7.99,
+    "descripcion": "Una fresca ensalada César con lechuga romana, crutones, parmesano y aderezo César."
+  },
+  {
+    "id": 4,
+    "nombre": "Sushi variado",
+    "precio": 18.99,
+    "descripcion": "Un surtido de sushi fresco que incluye rollos de salmón, atún y aguacate, con salsa de soja y wasabi."
+  },
+  {
+    "id": 5,
+    "nombre": "Tacos al pastor",
+    "precio": 10.49,
+    "descripcion": "Tacos de cerdo marinado con piña, cebolla y cilantro en tortillas de maíz recién hechas."
+  }]
+}
